@@ -7,34 +7,45 @@
     <title>Weather Dashboard by Andres Pena</title>
     <!-- pure css -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-
+    <!-- pure responsive grids css  -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- General Container -->
 <div>
     <!-- Header -->
-    <div>
-        <h1>Weaather Forecast</h1>
+    <div class="titleHeader">
+        <h1>Weather Forecast</h1>
     </div>
     <!-- Main -->
-    <div>
+    <div class = 'pure-g'>
         <!-- Side -->
-        <div>
+        <div class="pure-u-1 pure-u-md-1-4">
             <!-- Search -->
             <div>
-                
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend>Search For a City</legend>
+                        <input type="text" id="stacked-email" placeholder="Enter City or ZIP Code" />
+                        <button class="pure-button pure-button-primary" id="search-btn">Search</button>
+                    </fieldset>
+                </form>
+
             </div>
+            <hr>
             <!-- History -->
             <div>
 
             </div>
         </div>
         <!-- Dashboard -->
-        <div>
+        <div class="pure-u-1 pure-u-md-3-4"> 
             <!-- Focus -->
-            <div></div>
+            <div id="focus">*FOCUS*</div>
             <!--5 day forecast  -->
-            <div></div>
+            <div id="forecast">*5 DAY FORECAST*</div>
         </div>
     </div>
 </div>
