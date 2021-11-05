@@ -16,10 +16,20 @@ h1, h2 {
 #focus {
     padding :1%;
     margin : 2%;
-    border : black solid 1px;
+    border : black solid 2px;
 }
 #forecast {
     padding:1%;
     margin-left: 2%;
     margin-right: 2%;
+}
+#cardContainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.bg-secondary{
+    border: solid black 1px;
+    padding: 1%;;
+    background-color: rgb(204, 203, 203, 0.4);
 }
