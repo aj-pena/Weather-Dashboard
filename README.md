@@ -54,7 +54,7 @@ Once in the landing page, type a city and click on the search button. Informatio
 Third-party assets:
 - [Pure CSS](https://purecss.io/)
 - [JQuery](https://jquery.com/)
-- [Open Weather API](https://momentjs.com/docs/#/use-it/)
+- [Open Weather API](https://openweathermap.org/)
 - [MomentJs](https://momentjs.com/docs/#/use-it/)
 
 
