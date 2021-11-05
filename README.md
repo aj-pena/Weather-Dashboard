@@ -52,12 +52,10 @@ Once in the landing page, type a city and click on the search button. Informatio
 ## Credits
 
 Third-party assets:
-- [Pure CSS]()
-
+- [Pure CSS](https://purecss.io/)
 - [JQuery](https://jquery.com/)
-
-- [Open Weather API](https://fontawesome.com/)
-- [MomentJs](https://www.npmjs.com/)
+- [Open Weather API](https://momentjs.com/docs/#/use-it/)
+- [MomentJs](https://momentjs.com/docs/#/use-it/)
 
 
 Reference material:
