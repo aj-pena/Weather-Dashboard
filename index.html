@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard by Andres Pena</title>
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <!-- pure css -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
     <!-- pure responsive grids css  -->
@@ -21,17 +23,18 @@
     <!-- Header -->
     <div class="titleHeader">
         <h1>Weather Forecast</h1> 
+        <p id="date"></p>
     </div>
     <!-- Main -->
     <div class = 'pure-g'>
         <!-- Side -->
         <div class="pure-u-1 pure-u-md-1-4">
             <!-- Search -->
-            <div>
+            <div id="formContainer">
                 <form class="pure-form pure-form-stacked">
                     <fieldset>
                         <h2>Search For a City</h2>
-                        <input type="text" id="stacked-email" placeholder="Enter City or ZIP Code" />
+                        <input type="search" id="input" placeholder="Enter City or ZIP Code">
                         <button class="pure-button pure-button-primary" id="search-btn">Search</button>
                     </fieldset>
                 </form>
@@ -46,15 +49,20 @@
         <!-- Dashboard -->
         <div class="pure-u-1 pure-u-md-3-4"> 
             <!-- Focus -->
-            <div id="focus">*FOCUS*</div>
+            <div id="focus">
+                <div id="rowContainer" class="row">
+                    <h2 id="ciDate"></h2><span id="icon"></span>
+                    <ul id="weatherInfo" class ="col-8" list-style="none">
+                    </ul>
+                </div>
+            </div>
             <!--5 day forecast  -->
-            <div id="forecast">*5 DAY FORECAST*</div>
+            <div id="forecast"></div>
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src='script.js'></script>
-<script></script>
-
 
 </body>
 </html>
